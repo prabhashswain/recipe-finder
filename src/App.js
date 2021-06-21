@@ -39,9 +39,9 @@ function App() {
   return (
     <Container>
       <Header>
-        <AppNameComponent><RecipeImage src="/recipe-finder/hamburger.svg" /> Recipe Finder</AppNameComponent>
+        <AppNameComponent><RecipeImage src="./recipe-finder/recipe-finder/hamburger.svg" /> Recipe Finder</AppNameComponent>
         <SearchComponent>
-          <SearchIcon src="/recipe-finder/search-icon.svg" />
+          <SearchIcon src="./recipe-finder/recipe-finder/search-icon.svg" />
           <SearchInput type="text" placeholder="Search Recipe"
           onChange={onTextChange}
           />
@@ -54,7 +54,7 @@ function App() {
             <Recipe key={index} recipe={recipe.recipe} />
           ))
         ) : (
-          <Placeholder src="/recipe-finder/hamburger.svg" />
+          <Placeholder src="./recipe-finder/recipe-finder/hamburger.svg" />
         )}
 
       </RecipeListContainer>
